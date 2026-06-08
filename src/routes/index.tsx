@@ -73,7 +73,7 @@ function Index() {
             <a href="#competencias" className="hover:text-foreground transition">Competências</a>
             <a href="#atuacao" className="hover:text-foreground transition">Atuação</a>
             <a href="#formacao" className="hover:text-foreground transition">Formação</a>
-            <a href="#contato" className="hover:text-foreground transition">Contato</a>
+             {/*<a href="#contato" className="hover:text-foreground transition">Contato</a>*/}
           </div>
         </div>
       </nav>
@@ -106,12 +106,14 @@ function Index() {
 
             <div className="flex flex-wrap gap-4">
               <a href="https://www.linkedin.com/in/giuliana-pimentel-84853714a" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition">
-                <Linkedin className="w-4 h-4" /> LinkedIn
+                <Linkedin className="w-4 h-4" /> LinkedIn ↗
               </a>
+              {/* 
               <span className="text-muted-foreground/40">·</span>
               <a href="/Giuliana_Pimentel_Curriculo.pdf" target="_blank" rel="noopener noreferrer" download="Giuliana_Pimentel_Curriculo.pdf" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition">
                 <FileDown className="w-4 h-4" /> Currículo
               </a>
+              */}
             </div>
           </div>
 
@@ -139,12 +141,11 @@ function Index() {
               Ao longo da minha trajetória, trabalhei principalmente com requisitos e regras de negócio, atuando junto às áreas de negócio e tecnologia para transformar necessidades em definições mais claras.  
             </p>
           </div>
-          <div className="space-y-4 md:-mt-24">
+          <div className="space-y-4 md:-mt-12">
             {[
-              { label: "Atuação", value: "Requisitos e Regras de Negócio", desc: "Definição, organização e documentação de requisitos para desenvolvimento de sistemas..", icon: Search },
-              { label: "O que me move", value: "Curiosidade", desc: "Gosto de aprender coisas novas e entender melhor como elas funcionam.", icon: Lightbulb },
+              { label: "Área de Atuação", value: "Requisitos e Regras de Negócio", desc: "Especificação e documentação de requisitos em conjunto com áreas de negócio e tecnologia.", icon: Search },
               { label: "Foco atual", value: "MBA em IA Aplicada a Negócios", desc: "FAAP • Em andamento", icon: Sparkles },
-            ].map((c) => (
+             ].map((c) => (
               <div key={c.label} className="p-6 rounded-2xl bg-card border border-border">
                 <div className="flex items-center gap-2 text-xs font-medium tracking-wider uppercase text-primary mb-3">
                   <c.icon className="w-3.5 h-3.5" /> {c.label}
@@ -243,7 +244,7 @@ function Index() {
         </div>
       </Section>*/}
 
-      {/* Contato */}
+      {/* Contato
       <Section
         id="contato"
         eyebrow="Contato"
@@ -266,6 +267,7 @@ function Index() {
             </div>
             <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition" />
           </a>
+          {/*
           <a
             href="/Giuliana_Pimentel_Curriculo.pdf"
             target="_blank"
@@ -281,8 +283,11 @@ function Index() {
               <div className="text-sm text-muted-foreground">Versão atualizada para consulta e download.</div>
             </div>
           </a>
+          
         </div>
       </Section>
+      */}
+   
 
       <footer className="border-t border-border py-10 px-6">
         <div className="max-w-6xl mx-auto text-sm text-muted-foreground text-center">
